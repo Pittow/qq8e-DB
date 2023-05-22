@@ -4,9 +4,9 @@ Download qq8e from [here](https://github.com/qq8e/qq)
 
 This database actually contains 719753240 relations , but 51278021 have clash with others . 😔
 
-So I've got 668354125 people's phone number , but some of them has 2 or more phone number . ???
+So I've got 668354125 people's phone number , but some of them has 2 or more phone number . 🤬
 
-Anyway , it is a big social engineering database . It's a big watse of disk storaging it by a common **DB Software** .
+Anyway , it is a big social engineering database . Storing it with normal database software wastes a lot of disk space .
 
 Here I'd like to introduce a better way to manage the database using less disk space .
 
@@ -56,3 +56,5 @@ The most direct idea maybe swap two keys , and do it again . But it takes more d
 
 There's a good idea says , just record `b[x]` as the address of the phone number which ranks `x` . When dichotomous phone number , just goto `b[mid]` to check if its too big or small .
 This part needs a new file saves the ranking . It will be about `2.7GiB` . 
+
+Total space `6.1GiB` supporting O(log n) query the key .
