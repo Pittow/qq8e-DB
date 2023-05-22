@@ -52,9 +52,9 @@ Finally we can query the phone number through QQid , all the file we must save s
 
 Oh , I want to query the QQid through phone number also !
 
-The most direct idea maybe swap two keys , and do it again . But it takes more disk space .
+The most direct idea maybe swap two values , and do it again . But it takes more disk space .
 
 There's a good idea says , just record `b[x]` as the address of the phone number which ranks `x` . When dichotomous phone number , just goto `b[mid]` to check if its too big or small .
 This part needs a new file saves the ranking . It will be about `2.7GiB` . 
 
-Total space `6.1GiB` supporting O(log n) query the key .
+Total space `6.1GiB` supporting O(log n) query the value bidirection .
