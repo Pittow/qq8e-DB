@@ -20,7 +20,7 @@ QQid ranges `[0,0xffffffff]` , storaging it by `unsigned int` takes 4 bytes each
 
 Phone number ranges `[130-0000-0000,199-9999-9999]` in Chinese , but not every prefix is taken .
 
-Use bucket to check how many prefix is in use , in all 10000 `five digits prefix leads by 1` , it takes 4100 .
+Use bucket to check how many prefix is in use , in all 10000 `five digits prefix which leads by 1` , it takes 4100 .
 
 Now we can map every number to an `unsigned int` , it takes 4bytes each also .
 
